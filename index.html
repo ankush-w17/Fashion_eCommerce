@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion brand</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="logo image" />
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids & Baby</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+    <section class="hero">
+      <img src="hero-edit.png" alt="hero image" />
+    </section>
+    <section class="products">
+      <h1>Discover NEW Arrivals</h1>
+      <div class="product-grid">
+        <div id="item1" class="product-card">
+            <img src="blue polo.webp" alt="">
+            <p class="product-name">Blue polo</p>
+            <p class="product-price">₹1199</p>
+        </div>
+        <div id="item2" class="product-card">
+            <img src="black shirt.webp" alt="">
+            <p class="product-name">Black Shirt</p>
+            <p class="product-price">₹999</p>
+        </div>
+        <div id="item3" class="product-card">
+            <img src="ralph denim.webp" alt="">
+            <p class="product-name">Blue Denim</p>
+            <p class="product-price">₹2500</p>
+        </div>
+        <div  class="product-card">
+          <img src="formal shirt.webp" alt="">
+          <p class="product-name">Formal Shirt</p>
+          <p class="product-price">₹1499</p>
+      </div>
+      <div  class="product-card">
+        <img src="hoodie.webp" alt="">
+        <p class="product-name">Hoodie</p>
+        <p class="product-price">₹1899</p>
+    </div>
+    <div  class="product-card">
+      <img src="Jacket.webp" alt="">
+      <p class="product-name">Jacket</p>
+      <p class="product-price">₹4999</p>
+  </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="feature-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div class="text-content">
+          <b>Free Shipping</b>
+          <p>Enjoy free shipping on orders above ₹999</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="text-content">
+          <b>Support 24/7</b>
+          <p>Our Support team is there to help with your queries</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-rotate-left"></i>
+        <div class="text-content">
+          <b>30 Days Return</b>
+          <p>Simply Return it within 30 days for exchange.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-fingerprint"></i>
+        <div class="text-content">
+          <b>100% Payment Secure</b>
+          <p>Our payments are secured with 256 bit encryption</p>
+        </div>
+      </div>
+    </section>
+    <!-- <hr> -->
+    <footer>
+      <div>
+        <b>Company info</b>
+        <ul class="footer-list">
+          <li>About Us</li>
+          <li>Latest Posts</li>
+          <li>Contact Us</li>
+          <li>Shop</li>
+        </ul>
+      </div>
+      <div>
+        <b>Help Links</b>
+        <ul class="footer-list">
+          <li>Tracking</li>
+          <li>Order Status</li>
+          <li>Delivery</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div>
+        <b>Useful Links</b>
+        <ul class="footer-list">
+          <li>Special Offers</li>
+          <li>Gift Cards</li>
+          <li>Advertising</li>
+          <li>Terms of Use</li>
+        </ul>
+      </div>
+      <div>
+        <b>Account</b>
+        <ul class="footer-list">
+          <li>My Account</li>
+          <li>Check Order</li>
+          <li>Manage Cookies</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </footer>
+    <div id="copyright-div">
+      <hr>
+        <p id="copyright">© Copyright 2024 Ralph Lauren Media LLC</p>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/a1c18acd88.js"
+    crossorigin="anonymous"
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  ></script>
+</html>
