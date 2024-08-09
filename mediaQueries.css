@@ -103,10 +103,11 @@ display: none;
    .hamburger{
     font-size: 1.5em;
     top: 20px;
+    right: 20px;
    }
    nav .logo img{
     height: 1.5em;
-    top: 12px;
+    top: 10px;
     position: relative;
    }
  }
