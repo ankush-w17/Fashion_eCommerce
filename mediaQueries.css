@@ -24,6 +24,14 @@ display: none;
 }
  @media(max-width:800px){
     .nav-icons i{display: none;}
+    .feature-item{
+      border-bottom: 1px solid black;
+      width: 100%;
+    }
+    .feature-item .text-content{
+      margin: auto;
+      top: 50%;
+    }
     .nav-links{
         right: -100%; /* Hide the menu off-screen by default */
         transition: right 0.3s ease-in-out;
