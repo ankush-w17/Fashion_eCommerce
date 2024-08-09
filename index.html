@@ -142,14 +142,26 @@
         <p id="copyright">© Copyright 2024 Ralph Lauren Media LLC</p>
     </div>
   </body>
-  <script
-    src="https://kit.fontawesome.com/a1c18acd88.js"
-    crossorigin="anonymous"
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+  <script src="https://kit.fontawesome.com/a1c18acd88.js" crossorigin="anonymous"></script>
+  <script>
+   function changeColor() {
+  let hamburgerIcon = document.querySelector(".hamburger i");
+  let currentColor = window.getComputedStyle(hamburgerIcon).color;
+
+  if (currentColor === "rgb(0, 0, 0)") { // black
+    hamburgerIcon.style.color = "white";
+  } else {
+    hamburgerIcon.style.color = "black";
+  }
+}
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  changeColor(); // Call changeColor when the hamburger menu is clicked
+});
+  </script>
   
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-  ></script>
-</html>
+  </html>

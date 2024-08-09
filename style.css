@@ -65,8 +65,8 @@ nav .logo img{
     grid-template-columns: repeat(3,1fr);
 }
 .product-card{
-    /* width: 100%; */
-    height: 25%;
+    
+    width : 50%;
     text-align: center;
     margin: 2em 5em;
 }
@@ -123,4 +123,6 @@ footer div b{
     background-color: var(--offwhite);
     padding: 1.7em 0;
 }
-
+.hamburger i {
+    color: black; 
+}
