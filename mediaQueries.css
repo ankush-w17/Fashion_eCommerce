@@ -1,113 +1,111 @@
 .hamburger {
-cursor: pointer;
-font-size: 2rem;
-z-index: 1;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
 
-display: none;
+  display: none;
 }
 
-@media(max-width:1000px){
-    #features
-    {
-      /* padding: 0; */
-      flex-wrap: wrap;
-    }
-    .feature-item{
-      margin-bottom: 2.5em;
-    }
-    .feature-item .text-content{
-      text-align: center;
-    }
-    .feature-item i {
-      display: none;
-    }
+@media (max-width: 1000px) {
+  #features {
+    /* padding: 0; */
+    flex-wrap: wrap;
+  }
+  .feature-item {
+    margin-bottom: 2.5em;
+  }
+  .feature-item .text-content {
+    text-align: center;
+  }
+  .feature-item i {
+    display: none;
+  }
 }
- @media(max-width:800px){
-    .nav-icons i{display: none;}
-    .feature-item{
-      border-bottom: 1px solid black;
-      width: 100%;
-    }
-    .feature-item .text-content{
-      margin: auto;
-      top: 50%;
-    }
-    .nav-links{
-        right: -100%; /* Hide the menu off-screen by default */
-        transition: right 0.3s ease-in-out;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 60%;
-        height: 100vh;  
-        background-color: black;
-        
-    }
-    .nav-links ul{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height:100%;
-    }
-    .nav-links ul li{
-        margin-bottom: 2.5em;
-    }
-    .nav-links ul li a{
-        color: white;
-        font-size: large;
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 15px;
-        color: black;
-      }
-      
-      .nav-links.active {
-        /* display: flex; */
-        transform: translateX(0);
-      }
-      .nav-links {
-        transform: translateX(100%);
-      }
-      .product-grid{
-        grid-template-columns: repeat(2,1fr);
-      }
-      footer{
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 1em;
-        padding-bottom: 0;
-        
-       }
-       .footer-list{
-        display: none;
-       }
-       footer div{
-        margin-bottom: 1em;
-        margin-top: 1em;
+@media (max-width: 800px) {
+  .nav-icons i {
+    display: none;
+  }
+  .feature-item {
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  .feature-item .text-content {
+    margin: auto;
+    top: 50%;
+  }
+  .nav-links {
+    right: -100%; /* Hide the menu off-screen by default */
+    transition: right 0.3s ease-in-out;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .nav-links ul li {
+    margin-bottom: 2.5em;
+  }
+  .nav-links ul li a {
+    color: white;
+    font-size: large;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: black;
+  }
 
-       }
-    }
-    @media(max-width:495px){
-   .product-grid{
-     grid-template-columns: repeat(1,1fr);
-     align-items: center;
-   }
-   .product-card{
+  .nav-links.active {
+    /* display: flex; */
+    transform: translateX(0);
+  }
+  .nav-links {
+    transform: translateX(100%);
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1em;
+    padding-bottom: 0;
+  }
+  .footer-list {
+    display: none;
+  }
+  footer div {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+}
+@media (max-width: 495px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .product-card {
     margin-left: auto;
     margin-right: auto;
-   }
-   .hamburger{
+  }
+  .hamburger {
     font-size: 1.5em;
     top: 20px;
     right: 20px;
-   }
-   nav .logo img{
+  }
+  nav .logo img {
     height: 1.5em;
     top: 10px;
     position: relative;
-   }
- }
+  }
+}
