@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-define * {
+* {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -35,7 +35,7 @@ nav .logo img {
   transition: transform 0.4s;
 }
 .nav-links ul li:hover{
-    transform: translate(1px,2px);
+    transform: translate(0.5px,2px);
 }
 .nav-links ul li a {
     text-decoration: none;
@@ -70,6 +70,7 @@ nav .logo img {
 .products h1 {
   text-align: center;
   margin: 2em 0;
+  font-size: 250%;
 }
 .product-grid {
   display: grid;
@@ -82,7 +83,7 @@ nav .logo img {
   transition: transform 0.4s;
 }
 .product-card:hover{
-    transform: translate(2%,2%);
+    transform: translate(-1%,-2%);
 }
 .product-card img {
   border-radius: 5%;
